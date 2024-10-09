@@ -225,6 +225,7 @@ main .img-content > img {
 
 
 section.sobre-mim {
+    display: flex;
     width: 100%;
     height: 100vh;
     padding: 0 2%;
@@ -233,39 +234,42 @@ section.sobre-mim {
   
 .sobre-mim > .container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    width: 100%;
+    flex-direction: column;
+    width: 50%;
     height: 100vh;
-  }
-  
- .container > .container-text {
+    padding: 0 2%;
+}
+
+.container > .text-container {
     display: flex;
     flex-direction: column;
-    color: var(--white);
-    width: 50%;
- }
+    width: 100%;
+    height: 50%;
+}
 
- .container-text > h1 {
+.text-container > h1 {
     font-family: Mono;
-    font-size: 42px;
- }
+    font-size: 46px;
+}
 
- .container-text > h1 span{
+.text-container h1 > span {
     color: var(--color4);
- }
+}
 
- .container-text > p {
-    font-family: Poppins, sans-serif;
-    font-size: 28px;
+.text-container > p {
     text-align: justify;
- }
-  
-.contato {
-    margin-top: 50px;
-  }
+    font-family: Mono;
+    font-size: 26px;
+}
 
-.btn-contato button{
+.sobre-mim > .contatos {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.btn-contato button {
     color: var(--white);
     cursor: pointer;
     font-size: 18px;
@@ -273,11 +277,11 @@ section.sobre-mim {
     background: rgb(74,92,106);
     background: radial-gradient(circle, rgba(74,92,106,1) 0%, rgba(37,55,69,1) 100%);
     border: 2px solid transparent;
-    border-radius: 15px 0px 15px 0px;
+    border-radius: 0px 15px 0px 15px;
     padding: 10px 15px;
     transition: all 0.55s ease;
   }
-  
+
 .btn-contato button:hover {
     transform: translate(5px);
     border: 2px solid var(--color6);    
@@ -288,6 +292,25 @@ section.sobre-mim {
     background: var(--color2);
     border-radius: 10px;
 }
+
+.sobre-mim > .img-container {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 50%;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+
+.sobre-mim .img-container > img {
+    position: absolute;
+    bottom: 0;
+    width: 850px;
+    height: 80%;
+    filter: drop-shadow(0 0 15px rgba(74, 92, 106, 0.8));
+}
+
 
 
 

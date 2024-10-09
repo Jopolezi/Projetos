@@ -27,3 +27,15 @@ ScrollReveal().reveal('.cards-wrapper', {
   origin: 'bottom',
   distance: '10%'
 });
+
+ScrollReveal().reveal('.container', { 
+  duration: 2000,
+  origin: 'left',
+  distance: '10%'
+});
+
+ScrollReveal().reveal('.img-container', { 
+  duration: 2000,
+  origin: 'bottom',
+  distance: '10%'
+});
